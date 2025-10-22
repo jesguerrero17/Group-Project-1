@@ -1,0 +1,75 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#page-header{
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    text-align: center;
+    border-bottom: 2px solid black;
+    background-color: #eee;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    
+    border: 2px solid black;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    
+    background-color: blue;
+}
+
+.left-column{
+    background-color: lightblue;
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content {
+    background-color: lightcoral;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-portion {
+    background-color: lightyellow;
+    flex: 1;
+}
+
+.bottom-portion {
+    background-color: lightgreen;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex: .4;
+}
+
+.preview-box{
+    background-color: white;
+    border: 1px solid black;
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.flavor-box{
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
