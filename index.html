@@ -1,33 +1,130 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream Customizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Snow Way</h1>
+  </header>
 
+  <main>
+    <aside class="sidebar">
+      <div class="filter">
+        <h2>Filters</h2>
+        <label><input type="checkbox" id="show-dairyfree"> Dairy Free</label>
+        <label><input type="checkbox" id="show-nutfree"> Nut Free</label>
+        <label><input type="checkbox" id="show-glutenfree"> Gluten Free</label>
+      </div>
 
-<html>
-    <head>
-        <title>Ice Cream Customizer</title>
-        <link rel= "stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1 id="page-header">Ice Cream Customizer</h1>
-        
-        
-    
-        <div class="page-container">
-            
-            <div class="left-column">
-                <input type="text" placeholder="filter by">
-                <div class="preview-box"> </div>
-                <div class="preview-box"></div>
-                <div class="preview-box"></div>
-
-            </div>
-            <div class="main-content">
-                <div class="top-portion"></div>
-                <div class="bottom-portion">
-                    <div class="preview-box"> </div>
-                    <div class="preview-box"> </div>
-                    <div class="preview-box"> </div>
-                </div>
-            </div>
+      <div class="previews">
+        <div class="preview-card dairy">
+          <img src="images/vanilla_sundae_WP.png" alt="Vanilla Sundae">
+          <h4>Classic Vanilla Sundae</h4>
+          <p>Vanilla base with chocolate syrup and cherry.</p>
         </div>
-    </body>
+        <div class="preview-card dairy">
+          <img src="images/mintchoc_WP.png" alt="Mint Chocolate Chip">
+          <h4>Mint Chocolate Chip</h4>
+          <p>Mint base with chocolate chips.</p>
+        </div>
+
+        <div class="preview-card nutfree">
+          <img src="images/strawberry_delight_WP.png" alt="Strawberry Delight">
+          <h4>Strawberry Delight</h4>
+          <p>Strawberry base, strawberry syrup, whipped cream, and sprinkles.</p>
+        </div>
+
+      </div>
+    </aside>
+
+    <section class="middle">
+      <div class="recipe-card">
+        <h2>Recipe w/ Ingredients</h2>
+        <ul>
+          <li>Vanilla Base</li>
+          <li>Chocolate Syrup</li>
+          <li>Whipped Cream</li>
+          <li>Cherry</li>
+          <li>Sprinkles</li>
+        </ul>
+      </div>
+
+      <div class="nutrition">
+        <h2>Nutrition Label</h2>
+        <p>Calories: 340</p>
+        <p>Sugar: 26g</p>
+        <p>Fat: 15g</p>
+      </div>
+    </section>
+
+    <section class="visual">
+      <img src="placeholder.png" alt="Ice Cream" class="icecream-img">
+      <p class="note">* Ice cream updates based on selections</p>
+    </section>
+  </main>
+
+  <!-- bottom tab wection -->
+  <section class="customizer">
+    <!-- hidden tab inputs -->
+    <input type="radio" name="tab" id="tab-base" checked>
+    <input type="radio" name="tab" id="tab-swirls">
+    <input type="radio" name="tab" id="tab-toppings">
+    <input type="radio" name="tab" id="tab-syrup">
+
+    <!-- tab buttons -->
+    <div class="tab-buttons">
+      <label for="tab-base" class="tab-label">Base</label>
+      <label for="tab-swirls" class="tab-label">Swirls</label>
+      <label for="tab-toppings" class="tab-label">Toppings</label>
+      <label for="tab-syrup" class="tab-label">Syrup</label>
+    </div>
+
+ 
+    <div class="tab-content">
+      <!-- Base-->
+      <div class="tab-panel" id="content-base">
+        <h3>Choose Your Base</h3>
+        <div class="options">
+          <label><input type="radio" name="base" checked> Vanilla</label>
+          <label><input type="radio" name="base"> Chocolate</label>
+          <label><input type="radio" name="base"> Strawberry</label>
+          <label><input type="radio" name="base"> Mint Chocolate Chip</label>
+        </div>
+      </div>
+
+      <!-- swirls tab -->
+      <div class="tab-panel" id="content-swirls">
+        <h3>Choose Your Swirls</h3>
+        <div class="options">
+          <label><input type="checkbox"> Caramel</label>
+          <label><input type="checkbox"> Fudge</label>
+          <label><input type="checkbox"> Berry</label>
+        </div>
+      </div>
+
+      <!-- toppings -->
+      <div class="tab-panel" id="content-toppings">
+        <h3>Choose Your Toppings</h3>
+        <div class="options">
+          <label><input type="checkbox"> Whipped Cream</label>
+          <label><input type="checkbox"> Sprinkles</label>
+          <label><input type="checkbox"> Nuts</label>
+        </div>
+      </div>
+
+      <!-- Syrup Tab -->
+      <div class="tab-panel" id="content-syrup">
+        <h3>Choose Your Syrup</h3>
+        <div class="options">
+          <label><input type="radio" name="syrup"> Chocolate</label>
+          <label><input type="radio" name="syrup"> Strawberry</label>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
