@@ -291,3 +291,64 @@ main:has(+ .customizer #vanilla:checked) .scene .vanilla {
 main:has(+ .customizer #mint_scoop:checked) .scene .mint_scoop {
   display: block;
 }
+
+.nutrition-label {
+  width: 260px;
+  border: 8px solid black;
+  background: white;
+  padding: 10px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  line-height: 1.2;
+}
+
+.nutrition-label h1 {
+  font-size: 24px;
+  border-bottom: 10px solid black;
+  margin: 0 0 5px 0;
+  padding-bottom: 3px;
+}
+
+.nutrition-label h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.nutrition-label p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.nutrition-label .serving {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.nutrition-label .amount {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.nutrition-label .indent {
+  margin-left: 15px;
+}
+
+.nutrition-label .thin-line {
+  border-top: 1px solid black;
+  margin: 3px 0;
+}
+
+.nutrition-label .thick-line {
+  border-top: 5px solid black;
+  margin: 6px 0;
+}
+
+.nutrition-label .note {
+  font-size: 10px;
+  margin-top: 5px;
+}
