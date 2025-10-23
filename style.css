@@ -234,7 +234,7 @@ footer.bottom-bar {
 /* Div where images are placed. Images are kept hidden until checkbox reveals. */
 .scene {
   position: relative;
-  width: 220px;
+  width: 100%;
   height: 320px;
   margin-bottom: 1.5rem;
 }
@@ -242,18 +242,17 @@ footer.bottom-bar {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
   max-width: 220px;
   display: none;        /* hidden by default */
 }
 
 main:has(+ .customizer #cherry:checked) .scene .cherry {
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 main:has(+ .customizer #choco:checked) .scene .choco {
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 main:has(+ .customizer #choc_syrup:checked) .scene .choc_syrup {
   display: block;
@@ -261,15 +260,15 @@ main:has(+ .customizer #choc_syrup:checked) .scene .choc_syrup {
 }
 main:has(+ .customizer #nuts:checked) .scene .nuts {
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 main:has(+ .customizer #pbcc:checked) .scene .pbcc {
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 main:has(+ .customizer #sprinkles:checked) .scene .sprinkles {
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 main:has(+ .customizer #straw_syrup:checked) .scene .straw_syrup {
   display: block;
@@ -290,6 +289,50 @@ main:has(+ .customizer #vanilla:checked) .scene .vanilla {
 }
 main:has(+ .customizer #mint_scoop:checked) .scene .mint_scoop {
   display: block;
+}
+
+.choco{
+    width: 100px;
+    height: 100px;
+    top: 10px;
+}
+.pbcc{
+    width: 100px;
+    height: 100px;
+    top: 10px;
+}
+.nuts{
+
+    width: 100px;
+    height: 100px;
+    top: 10px;
+
+}
+
+.choc_syrup{
+    width: 130px;
+    height: 150px;
+}
+.straw_syrup{
+    width: 130px;
+    height: 150px;
+}
+.cherry{
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    top: 0px;
+    left: 500px;
+}
+.sprinkles{
+    width: 90px;
+    height: 100px;
+    top: 10px;
+}
+.pbcc{
+    width: 90px;
+    height: 100px;
+    top: 10px;
 }
 
 .nutrition-label {
