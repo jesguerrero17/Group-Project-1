@@ -230,3 +230,64 @@ footer.bottom-bar {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Div where images are placed. Images are kept hidden until checkbox reveals. */
+.scene {
+  position: relative;
+  width: 220px;
+  height: 320px;
+  margin-bottom: 1.5rem;
+}
+.scene img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 220px;
+  display: none;        /* hidden by default */
+}
+
+main:has(+ .customizer #cherry:checked) .scene .cherry {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #choco:checked) .scene .choco {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #choc_syrup:checked) .scene .choc_syrup {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #nuts:checked) .scene .nuts {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #pbcc:checked) .scene .pbcc {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #sprinkles:checked) .scene .sprinkles {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #straw_syrup:checked) .scene .straw_syrup {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #whipped_cream:checked) .scene .whipped_cream {
+  display: block;
+  z-index: 1;
+}
+main:has(+ .customizer #cho:checked) .scene .cho {
+  display: block;
+}
+main:has(+ .customizer #straw:checked) .scene .straw {
+  display: block;
+}
+main:has(+ .customizer #vanilla:checked) .scene .vanilla {
+  display: block;
+}
+main:has(+ .customizer #mint_scoop:checked) .scene .mint_scoop {
+  display: block;
+}

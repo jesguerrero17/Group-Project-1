@@ -62,8 +62,21 @@
     </section>
 
     <section class="visual">
-      <img src="placeholder.png" alt="Ice Cream" class="icecream-img">
-      <p class="note">* Ice cream updates based on selections</p>
+        <div class="scene">
+            <img src="images/ice_cream_WP_cherry.png" alt="Ice Cream" class="cherry">
+            <img src="images/ice_cream_WP_choco_chips.png" alt="Ice Cream" class="choco">
+            <img src="images/ice_cream_WP_chocolate_syrup.png" alt="Ice Cream" class="choc_syrup">
+            <img src="images/ice_cream_WP_mint_scoop.png" alt="Ice Cream" class="mint_scoop">
+            <img src="images/ice_cream_WP_nuts.png" alt="Ice Cream" class="nuts">
+            <img src="images/ice_cream_WP_peanut_butter_chips.png" alt="Ice Cream" class="pbcc">
+            <img src="images/ice_cream_WP_sprinkles.png" alt="Ice Cream" class="sprinkles">
+            <img src="images/ice_cream_WP_strawberry_syrup.png" alt="Ice Cream" class="straw_syrup">
+            <img src="images/ice_cream_WP_whipped_cream.png" alt="Ice Cream" class="whipped_cream">
+            <img src="images/ice_cream_WPcho.png" alt="Ice Cream" class="cho">
+            <img src="images/ice_cream_WPstraw.png" alt="Ice Cream" class="straw">
+            <img src="images/ice_cream_WPv.png" alt="Ice Cream" class="vanilla">
+            
+        </div>
     </section>
   </main>
 
@@ -89,10 +102,10 @@
       <div class="tab-panel" id="content-base">
         <h3>Choose Your Base</h3>
         <div class="options">
-          <label><input type="radio" name="base" checked> Vanilla</label>
-          <label><input type="radio" name="base"> Chocolate</label>
-          <label><input type="radio" name="base"> Strawberry</label>
-          <label><input type="radio" name="base"> Mint Chocolate Chip</label>
+          <label><input type="radio" name="base" id="vanilla" checked > Vanilla</label>
+          <label><input type="radio" name="base" id="cho"> Chocolate</label>
+          <label><input type="radio" name="base" id="straw"> Strawberry</label>
+          <label><input type="radio" name="base" id="mint_scoop"> Mint Chocolate Chip</label>
         </div>
       </div>
 
@@ -110,9 +123,9 @@
       <div class="tab-panel" id="content-toppings">
         <h3>Choose Your Toppings</h3>
         <div class="options">
-          <label><input type="checkbox"> Whipped Cream</label>
-          <label><input type="checkbox"> Sprinkles</label>
-          <label><input type="checkbox"> Nuts</label>
+          <label><input type="checkbox" id="cherry">Cherry </label>
+          <label><input type="checkbox" id="choco"> Chocolate Chips</label>
+          <label><input type="checkbox" id="nuts"> Nuts</label>
         </div>
       </div>
 
@@ -120,8 +133,8 @@
       <div class="tab-panel" id="content-syrup">
         <h3>Choose Your Syrup</h3>
         <div class="options">
-          <label><input type="radio" name="syrup"> Chocolate</label>
-          <label><input type="radio" name="syrup"> Strawberry</label>
+          <label><input type="radio" name="syrup" id="choc_syrup"> Chocolate</label>
+          <label><input type="radio" name="syrup" id="straw_syrup"> Strawberry</label>
         </div>
       </div>
     </div>
