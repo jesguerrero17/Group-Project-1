@@ -188,7 +188,6 @@ footer.bottom-bar {
 
 /* Highlight active tab */
 #tab-base:checked ~ .tab-buttons label[for="tab-base"],
-#tab-swirls:checked ~ .tab-buttons label[for="tab-swirls"],
 #tab-toppings:checked ~ .tab-buttons label[for="tab-toppings"],
 #tab-syrup:checked ~ .tab-buttons label[for="tab-syrup"] {
   background: #4bc9e0;
